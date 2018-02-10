@@ -22,6 +22,9 @@ body {
 function getAPK() {
     document.getElementById('my_iframe').src = "https://sreeharis.tk/cc/CryptoChat.apk";
 };
+function getIPA() {
+    window.location.href = "itms-services://?action=download-manifest&url=https://cryptochat-app.github.io/manifest.plist";
+};
 </script>
 <table border="0"><tr>
     <td><b><h4>Click to download the APK version:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4></b></td>
@@ -29,7 +32,7 @@ function getAPK() {
 </tr>
 <tr>
 <td><b><h4>Click to download the iOS version:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h4></b></td>
-<td><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="bottom" onclick="alert('Sorry, no iOS version available yet :\'(');">iOS Download</button></td>
+<td><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="bottom" onclick="getIPA();">iOS Download</button></td>
 </tr>
 </table>
 </body>
